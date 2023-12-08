@@ -1,165 +1,164 @@
 {
-    "products": [
-      {
-        "pid": 17,
-        "name": "Cabbage",
-        "price": 1.5,
-        "type": "veg",
-        "harvest": 12,
-        "plant": "fall"
-      },
-      {
-        "pid": 20,
-        "name": "Lettuce",
-        "price": 0.55,
-        "type": "veg",
-        "harvest": 12,
-        "plant": "spring"
-      },
-      {
-        "pid": 21,
-        "name": "Parsnips",
-        "price": 1.25,
-        "type": "veg",
-        "harvest": 10,
-        "plant": "spring"
-      },
-      {
-        "pid": 154,
-        "name": "Potatoes",
-        "price": 2.25,
-        "type": "veg",
-        "harvest": 10,
-        "plant": "summer"
-      },
-      {
-        "pid": 29,
-        "name": "Carrots",
-        "price": 0.85,
-        "type": "veg",
-        "harvest": 12,
-        "plant": "winter"
-      },
-      {
-        "pid": 8,
-        "name": "Pumpkin",
-        "price": 2.95,
-        "type": "veg",
-        "harvest": 10,
-        "plant": "summer"
-      },
-      {
-        "pid": 34,
-        "name": "Asparagus",
-        "price": 0.95,
-        "type": "veg",
-        "harvest": 6,
-        "plant": "spring"
-      },
-      {
-        "pid": 35,
-        "name": "Peas",
-        "price": 0.95,
-        "type": "veg",
-        "harvest": 3,
-        "plant": "summer"
-      },
-      {
-        "pid": 36,
-        "name": "Basil",
-        "price": 0.95,
-        "type": "veg",
-        "harvest": 6,
-        "plant": "summer"
-      },
-      {
-        "pid": 37,
-        "name": "Blackberries",
-        "price": 0.95,
-        "type": "veg",
-        "harvest": 6,
-        "plant": "winter"
-      },
-      {
-        "pid": 38,
-        "name": "Blueberries",
-        "price": 0.95,
-        "type": "veg",
-        "harvest": 6,
-        "plant": "fall"
-      },
-      {
-        "pid": 39,
-        "name": "Cucumbers",
-        "price": 0.95,
-        "type": "veg",
-        "harvest": 6,
-        "plant": "winter"
-      },
-      {
-        "pid": 41,
-        "name": "Peaches",
-        "price": 0.95,
-        "type": "fruit",
-        "harvest": 6,
-        "plant": "winter"
-      },
-      {
-        "pid": 42,
-        "name": "Plums",
-        "price": 0.95,
-        "type": "fruit",
-        "harvest": 6,
-        "plant": "winter"
-      },
-      {
-        "pid": 43,
-        "name": "Raspberries",
-        "price": 0.95,
-        "type": "fruit",
-        "harvest": 6,
-        "plant": "fall"
-      },
-      {
-        "pid": 44,
-        "name": "Tomatoes",
-        "price": 0.95,
-        "type": "fruit",
-        "harvest": 6,
-        "plant": "spring"
-      },
-      {
-        "pid": 45,
-        "name": "Watermelon",
-        "price": 0.95,
-        "type": "fruit",
-        "harvest": 6,
-        "plant": "spring"
-      },
-      {
-        "pid": 120,
-        "name": "Apple",
-        "price": 0.55,
-        "type": "fruit",
-        "harvest": 10,
-        "plant": "winter"
-      },
-      {
-        "pid": 18,
-        "name": "Pear",
-        "price": 0.95,
-        "type": "fruit",
-        "harvest": 11,
-        "plant": "winter"
-      },
-      {
-        "pid": 134,
-        "name": "Strawberries",
-        "price": 0.95,
-        "type": "fruit",
-        "harvest": 6,
-        "plant": "spring"
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "pid": 17,
+      "name": "Cabbage",
+      "price": 1.5,
+      "type": "veg",
+      "harvest": 12,
+      "plant": 11
+    },
+    {
+      "pid": 20,
+      "name": "Lettuce",
+      "price": 0.55,
+      "type": "veg",
+      "harvest": 12,
+      "plant": 3
+    },
+    {
+      "pid": 21,
+      "name": "Parsnips",
+      "price": 1.25,
+      "type": "veg",
+      "harvest": 10,
+      "plant": 3
+    },
+    {
+      "pid": 154,
+      "name": "Potatoes",
+      "price": 2.25,
+      "type": "veg",
+      "harvest": 10,
+      "plant": 6
+    },
+    {
+      "pid": 29,
+      "name": "Carrots",
+      "price": 0.85,
+      "type": "veg",
+      "harvest": 12,
+      "plant": 12
+    },
+    {
+      "pid": 8,
+      "name": "Pumpkin",
+      "price": 2.95,
+      "type": "veg",
+      "harvest": 10,
+      "plant": 6
+    },
+    {
+      "pid": 34,
+      "name": "Asparagus",
+      "price": 0.95,
+      "type": "veg",
+      "harvest": 6,
+      "plant": 3
+    },
+    {
+      "pid": 35,
+      "name": "Peas",
+      "price": 0.95,
+      "type": "veg",
+      "harvest": 3,
+      "plant": 6
+    },
+    {
+      "pid": 36,
+      "name": "Basil",
+      "price": 0.95,
+      "type": "veg",
+      "harvest": 6,
+      "plant": 6
+    },
+    {
+      "pid": 37,
+      "name": "Blackberries",
+      "price": 0.95,
+      "type": "veg",
+      "harvest": 6,
+      "plant": 12
+    },
+    {
+      "pid": 38,
+      "name": "Blueberries",
+      "price": 0.95,
+      "type": "veg",
+      "harvest": 6,
+      "plant": 11
+    },
+    {
+      "pid": 39,
+      "name": "Cucumbers",
+      "price": 0.95,
+      "type": "veg",
+      "harvest": 6,
+      "plant": 12
+    },
+    {
+      "pid": 41,
+      "name": "Peaches",
+      "price": 0.95,
+      "type": "fruit",
+      "harvest": 6,
+      "plant": 12
+    },
+    {
+      "pid": 42,
+      "name": "Plums",
+      "price": 0.95,
+      "type": "fruit",
+      "harvest": 6,
+      "plant": 12
+    },
+    {
+      "pid": 43,
+      "name": "Raspberries",
+      "price": 0.95,
+      "type": "fruit",
+      "harvest": 6,
+      "plant": 10
+    },
+    {
+      "pid": 44,
+      "name": "Tomatoes",
+      "price": 0.95,
+      "type": "fruit",
+      "harvest": 6,
+      "plant": 3
+    },
+    {
+      "pid": 45,
+      "name": "Watermelon",
+      "price": 0.95,
+      "type": "fruit",
+      "harvest": 6,
+      "plant": 3
+    },
+    {
+      "pid": 120,
+      "name": "Apple",
+      "price": 0.55,
+      "type": "fruit",
+      "harvest": 10,
+      "plant": 12
+    },
+    {
+      "pid": 18,
+      "name": "Pear",
+      "price": 0.95,
+      "type": "fruit",
+      "harvest": 11,
+      "plant": 12
+    },
+    {
+      "pid": 134,
+      "name": "Strawberries",
+      "price": 0.95,
+      "type": "fruit",
+      "harvest": 6,
+      "plant": 3
+    }
+  ]
+}
