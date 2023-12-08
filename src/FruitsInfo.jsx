@@ -1,6 +1,7 @@
 // src/components/FruitInfo.js
 import React from "react";
 import { products } from "./veggieinfo.json";
+import "./styles.css";
 
 const FruitInfo = ({ date }) => {
   const fruitsData = products;
@@ -17,7 +18,7 @@ const FruitInfo = ({ date }) => {
     const checkMonth = checkDate.getMonth();
 
     for (const [season, { startMonth, endMonth }] of Object.entries(
-      seasonMapping,
+      seasonMapping
     )) {
       if (
         (checkMonth >= startMonth && checkMonth <= endMonth) ||
@@ -45,6 +46,17 @@ const FruitInfo = ({ date }) => {
     );
   });
 
+  const fruintsPlant = fruitsData.filter((pl) => {
+    const plantMonth = pl.plant - 1; // Adjust month to be zero-based (0-11)
+    return (
+      (selectedSeason === "winter" &&
+        (plantMonth === seasonMapping.winter.startMonth ||
+          plantMonth === seasonMapping.winter.endMonth)) ||
+      (plantMonth >= seasonMapping[selectedSeason].startMonth &&
+        plantMonth <= seasonMapping[selectedSeason].endMonth)
+    );
+  });
+
   return (
     <div>
       <h2>
@@ -53,6 +65,12 @@ const FruitInfo = ({ date }) => {
       <ul>
         {fruitsInSeason.map((fruit, index) => (
           <li key={index}>{fruit.name}</li>
+        ))}
+      </ul>
+      <h2>Fruits & Veggies ready to Plant for {date && date.toDateString()}</h2>
+      <ul>
+        {fruintsPlant.map((pl, index) => (
+          <li key={index}>{pl.name}</li>
         ))}
       </ul>
     </div>
