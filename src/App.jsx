@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Calendar from "./Calendar";
 import FruitInfo from "./FruitsInfo";
+import "./styles.css";
 
 const App = () => {
   const [selectedDate, setSelectedDate] = useState(null);
