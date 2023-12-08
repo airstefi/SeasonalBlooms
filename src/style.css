@@ -1,5 +1,8 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
+* {
+  font-family: "Times New Roman", Times, serif;
+  color: #2d3e1f;
+}
+
+body {
+  background: linear-gradient(#8cb369, #f4e285);
+}
