@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 
-/*
-  This file contains the tips generated when the user clicks the "New Tip" button on the homepage.
-  The tip shown is from a randomised index (chosen by id number).
-  These are short and sweet, sometimes based on the fruits and veggies in the database, sometimes functions of the website.
-*/
-
 const tip = [
   {
     id: 1,
@@ -25,6 +19,36 @@ const tip = [
     id: 4,
     content:
       "While wildlife within the garden is to be expected, bugs and pests can harm the enviroment you create! Learn more below in the 'Did you know' section!",
+  },
+  {
+    id: 5,
+    content:
+      "Every wall of your house can be used to grow fruit! The warmest walls can grow things like peaches or grapes well. Cherries or currants suit east or west-facing walls, and berries or cooking cherries would do well on north walls.",
+  },
+  {
+    id: 6,
+    content:
+      "Websites like Bord Bia have many helpful tips and PDF guides on growing your gardening skills. TheGardenShop also have guides and tips from experts.",
+  },
+  {
+    id: 7,
+    content:
+      "You don’t need a lot to grow your own plants, fruits or veggies. Even a balcony or windows and a lot of care can go a long way.",
+  },
+  {
+    id: 8,
+    content:
+      "Did you know every month has a birth flower? You can look up your and add it to your garden to add a personal touch!",
+  },
+  {
+    id: 9,
+    content:
+      "By growing your own fruit, not only are you richening the environment around you and letting nature flourish, but you’re also contributing to less plastic production and therefore waste. Choose growing over buying when possible!",
+  },
+  {
+    id: 10,
+    content:
+      "Plants can liven up your home by bringing more life and a pop of colour into your days!",
   },
 ];
 
