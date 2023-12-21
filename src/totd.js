@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+/*
+  This file contains the tips generated when the user clicks the "New Tip" button on the homepage.
+  The tip shown is from a randomised index (chosen by id number).
+  These are short and sweet, sometimes based on the fruits and veggies in the database, sometimes functions of the website.
+*/
+
 const tip = [
   {
     id: 1,
