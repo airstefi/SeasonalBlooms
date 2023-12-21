@@ -1,22 +1,65 @@
 * {
   font-family: "Times New Roman", Times, serif;
   color: #2d3e1f;
-  
-  button {
-    font-family: "Times New Roman", Times, serif;
-    opacity: 0.6;
-    color: whitesmoke;
-    background: rgb(52, 98, 60);
-    border: rgb(25, 47, 29) solid 2px;
-  }
-  button:hover {
-    opacity: 1;
-  }
 }
 
 body {
   background: linear-gradient(to left, #8cb369, #f4e285);
 }
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #2d3e1f;
+  border-radius: 20px;
+}
+
+header ul li a.active {
+  background-color: #516a3a;
+  color: #fff;
+}
+
+header ul li a:hover {
+  background-color: #516a3a;
+  color: #fff;
+}
+
+button {
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.6;
+  color: whitesmoke;
+  background: rgb(52, 98, 60);
+  border: rgb(25, 47, 29) solid 2px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
 h2 {
   text-align: center;
 }
