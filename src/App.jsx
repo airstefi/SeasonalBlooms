@@ -8,22 +8,28 @@ import { info } from "./tips/infoBits";
 import "./styles.css";
 
 const App = () => {
+  //state changers for date, active page and tip function
   const [selectedDate, setSelectedDate] = useState(null);
   const [activePage, setActivePage] = useState("home");
   const [tipRand, setTipRand] = useState(0); //for tip function
 
+  //change tip num when button is pressed
   function changeTipRand(i) {
     setTipRand(i + 1);
   }
 
+  //change date when new date is selected
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
 
+  //change page when other clicked
   const handlePageChange = (page) => {
     setActivePage(page);
   };
 
+
+  //function to generate new tip when button is clicked. prints in app return.
   function Robert(props) {
     //num is made to be a pos random number within array length
     var num = Math.floor(Math.random() * 3);
