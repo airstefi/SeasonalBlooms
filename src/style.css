@@ -1,8 +1,25 @@
 * {
   font-family: "Times New Roman", Times, serif;
   color: #2d3e1f;
+  button {
+    font-family: "Times New Roman", Times, serif;
+    opacity: 0.6;
+    color: whitesmoke;
+    background: rgb(52, 98, 60);
+    border: rgb(25, 47, 29) solid 2px;
+  }
+  button:hover {
+    opacity: 1;
+  }
 }
 
 body {
   background: linear-gradient(to left, #8cb369, #f4e285);
+}
+h2 {
+  text-align: center;
+}
+/* get a better surrounding box for the totd*/
+h4 {
+  background: rgb(68, 114, 75);
 }
