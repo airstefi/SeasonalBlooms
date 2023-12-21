@@ -3,33 +3,27 @@ import React, { useState } from "react";
 import Calendar from "./Calendar";
 import FruitInfo from "./FruitsInfo";
 import PlantandVeggies from "./PlantandVeggies";
-import { tip } from "./tips/totd";
-import { info } from "./tips/infoBits";
+import { tip } from "./totd";
+import { info } from "./infoBits";
 import "./styles.css";
 
 const App = () => {
-  //state changers for date, active page and tip function
   const [selectedDate, setSelectedDate] = useState(null);
   const [activePage, setActivePage] = useState("home");
   const [tipRand, setTipRand] = useState(0); //for tip function
 
-  //change tip num when button is pressed
   function changeTipRand(i) {
     setTipRand(i + 1);
   }
 
-  //change date when new date is selected
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
 
-  //change page when other clicked
   const handlePageChange = (page) => {
     setActivePage(page);
   };
 
-
-  //function to generate new tip when button is clicked. prints in app return.
   function Robert(props) {
     //num is made to be a pos random number within array length
     var num = Math.floor(Math.random() * 3);
@@ -41,14 +35,16 @@ const App = () => {
     );
   }
 
-  function printDidYK(props) {
+  function printDidYK() {
     return (
-      {info.map((c, index) => (
-        <p key={index}>
-          {" "}
-          <h3> {c.title} </h3> {c.bit}
-        </p>
-      ))}
+      <>
+        {info.map((c, index) => (
+          <p key={index}>
+            <h3>{c.title}</h3>
+            {c.bit}
+          </p>
+        ))}
+      </>
     );
   }
 
@@ -87,15 +83,19 @@ const App = () => {
       )}
       {activePage === "home" && <h4> {tip[tipRand].content} </h4>}
       {activePage === "home" && <hr />}
-      {activePage === <h2> Did you know... </h2>}
-      {activePage === "home" && <printDidYK bFromParent={infoBits}/> }
-      
-      {info.map((c, index) => (
-        <p key={index}>
-          {" "}
-          <h3> {c.title} </h3> {c.bit}
-        </p>
-      ))}
+      {activePage === "home" && <h2> Did you know... </h2>}
+      {activePage === "home" && <printDidYK />}
+
+      {activePage === "home" && (
+        <>
+          {info.map((c, index) => (
+            <p key={index}>
+              {" "}
+              <h3> {c.title} </h3> {c.bit}
+            </p>
+          ))}
+        </>
+      )}
       {activePage === "plantsAndVeggies" && <PlantandVeggies />}
     </div>
   );
