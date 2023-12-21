@@ -1,56 +1,24 @@
-// src/App.js
-import React, { useState } from "react";
-import Calendar from "./Calendar";
-import FruitInfo from "./FruitsInfo";
-import PlantandVeggies from "./PlantandVeggies";
+// src/components/FruitInfo.js
+import React from "react";
+import { products } from "./veggieinfo.json";
 import "./styles.css";
 
-const App = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [activePage, setActivePage] = useState("home");
-
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
-
-  const handlePageChange = (page) => {
-    setActivePage(page);
-  };
-
+const PlantandVeggies = () => {
   return (
     <div>
-      <header>
-        <ul>
-          <li>
-            <a
-              href="#"
-              className={activePage === "home" ? "active" : ""}
-              onClick={() => handlePageChange("home")}
-            >
-              Home
-            </a>
+      <h2>Plants & Veggies Page</h2>
+      <ul>
+        {products.map((product) => (
+          <li key={product.pid}>
+            <h3>{product.name}</h3>
+            <p>Harvest Month: {product.harvest}</p>
+            <p>Plant Month: {product.plant}</p>
+            {/* Add other details as needed */}
           </li>
-          <li>
-            <a
-              href="#"
-              className={activePage === "plantsAndVeggies" ? "active" : ""}
-              onClick={() => handlePageChange("plantsAndVeggies")}
-            >
-              Plants & Veggies
-            </a>
-          </li>
-        </ul>
-      </header>
-      <h1>Seasonal Blooms</h1>
-      {activePage === "home" && <p>Please choose a date</p>}
-      {activePage === "home" && <Calendar onDateChange={handleDateChange} />}
-      {selectedDate && activePage === "home" && (
-        <FruitInfo date={selectedDate} />
-      )}
-
-      {activePage === "plantsAndVeggies" && <PlantandVeggies />}
+        ))}
+      </ul>
     </div>
   );
 };
 
-export default App;
+export default PlantandVeggies;
