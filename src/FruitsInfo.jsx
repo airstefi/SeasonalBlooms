@@ -59,15 +59,14 @@ const FruitInfo = ({ date }) => {
 
   return (
     <div>
-      <h2>
-        Fruits & Veggies ready to Harvest for {date && date.toDateString()}
-      </h2>
+      <h2> The date you've chosen is {date && date.toDateString()}</h2>
+      <h3>Fruits & Veggies ready to Harvest</h3>
       <ul>
         {fruitsInSeason.map((fruit, index) => (
           <li key={index}>{fruit.name}</li>
         ))}
       </ul>
-      <h2>Fruits & Veggies ready to Plant for {date && date.toDateString()}</h2>
+      <h3>Fruits & Veggies ready to Plant </h3>
       <ul>
         {fruintsPlant.map((pl, index) => (
           <li key={index}>{pl.name}</li>
