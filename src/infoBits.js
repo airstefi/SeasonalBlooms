@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+/*
+  This file contains a database of extra pieces of information to support the daily garden forecast.
+  Included are things such as information of animals commonly found in gardens - i.e. bugs, bees, birds - and how
+  to deal / care for them appropriately to benefit the environment.
+  Could also just include links to resources for further learning in gardening and the environment.
+*/
 const info = [
   {
     title: "Bees and gardens",
