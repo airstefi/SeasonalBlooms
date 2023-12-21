@@ -48,6 +48,7 @@ header ul li a:hover {
   color: #fff;
 }
 
+/* For the "New Tip" button*/
 button {
   font-family: "Times New Roman", Times, serif;
   opacity: 0.6;
@@ -55,7 +56,6 @@ button {
   background: rgb(52, 98, 60);
   border: rgb(25, 47, 29) solid 2px;
 }
-
 button:hover {
   opacity: 1;
 }
