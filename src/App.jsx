@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useState } from "react";
 import Calendar from "./Calendar";
 import FruitInfo from "./FruitsInfo";
@@ -12,21 +12,24 @@ const App = () => {
   const [activePage, setActivePage] = useState("home");
   const [tipRand, setTipRand] = useState(0); //for tip function
 
+  //change the state of the tip randomizer
   function changeTipRand(i) {
     setTipRand(i + 1);
   }
 
+  //handles when the date is changes
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
 
+  //handles when the page is changed from home to plant and veggie and vise versa
   const handlePageChange = (page) => {
     setActivePage(page);
   };
 
   function Robert(props) {
     //num is made to be a pos random number within array length
-    var num = Math.floor(Math.random() * 9);
+    var num = Math.floor(Math.random() * 3);
     return (
       <>
         <h1> </h1>
@@ -35,6 +38,7 @@ const App = () => {
     );
   }
 
+  //prints the information that is inslide the array
   function printDidYK() {
     return (
       <>
@@ -48,6 +52,9 @@ const App = () => {
     );
   }
 
+  //renders everything, here we have the active pages, so it renderes based on which page we want it to be on
+  //so if we want the calander to be in the home the active page will be equal to home
+  //we have all the components that we want & also connected to our other files.
   return (
     <div>
       <header>
