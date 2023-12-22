@@ -1,4 +1,4 @@
-
+// src/App.js
 import React, { useState } from "react";
 import Calendar from "./Calendar";
 import FruitInfo from "./FruitsInfo";
@@ -11,6 +11,8 @@ const App = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [activePage, setActivePage] = useState("home");
   const [tipRand, setTipRand] = useState(0); //for tip function
+  const headerImageUrl =
+    "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"; //photo that goes in the header
 
   //change the state of the tip randomizer
   function changeTipRand(i) {
@@ -29,7 +31,7 @@ const App = () => {
 
   function Robert(props) {
     //num is made to be a pos random number within array length
-    var num = Math.floor(Math.random() * 9);
+    var num = Math.floor(Math.random() * 3);
     return (
       <>
         <h1> </h1>
@@ -38,7 +40,7 @@ const App = () => {
     );
   }
 
-  //prints the information that is inside the array
+  //prints the information that is inslide the array
   function printDidYK() {
     return (
       <>
@@ -79,6 +81,17 @@ const App = () => {
           </li>
         </ul>
       </header>
+
+      <img
+        src={headerImageUrl} //our images is here and we do our style here as well
+        alt="Header Image"
+        style={{
+          width: "100%", // make the image span the entire width of the container
+          maxHeight: "200px",
+          objectFit: "cover",
+          borderRadius: "8px", //rounded corners
+        }}
+      />
       <h1>Seasonal Blooms</h1>
       {activePage === "home" && <p>Please choose a date</p>}
       {activePage === "home" && <Calendar onDateChange={handleDateChange} />}
