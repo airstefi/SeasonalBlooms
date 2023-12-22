@@ -34,7 +34,7 @@ header ul li {
 header ul li a {
   text-decoration: none;
   padding: 6px 15px;
-  color: #2d3e1f;
+  color: #fefefe;
   border-radius: 20px;
 }
 
@@ -48,7 +48,6 @@ header ul li a:hover {
   color: #fff;
 }
 
-/* For the "New Tip" button*/
 button {
   font-family: "Times New Roman", Times, serif;
   opacity: 0.6;
@@ -56,6 +55,7 @@ button {
   background: rgb(52, 98, 60);
   border: rgb(25, 47, 29) solid 2px;
 }
+
 button:hover {
   opacity: 1;
 }
@@ -66,4 +66,8 @@ h2 {
 /* get a better surrounding box for the totd*/
 h4 {
   background: rgb(68, 114, 75);
+  color: #f1ebce;
+}
+h1 {
+  text-align: center;
 }
