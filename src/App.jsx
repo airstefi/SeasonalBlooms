@@ -38,7 +38,7 @@ const App = () => {
     );
   }
 
-  //prints the information that is inslide the array
+  //prints the information that is inside the array
   function printDidYK() {
     return (
       <>
