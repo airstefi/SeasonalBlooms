@@ -111,7 +111,7 @@ const App = () => {
           {info.map((c, index) => (
             <p key={index}>
               {" "}
-              <h3> {c.title} </h3> {c.bit}
+              <h3> {c.title} </h3> {c.bit} {c.img}
             </p>
           ))}
         </>
