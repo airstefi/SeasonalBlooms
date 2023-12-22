@@ -1,4 +1,3 @@
-// src/components/FruitInfo.js
 import React from "react";
 import { products } from "./veggieinfo.json";
 import "./styles.css";
