@@ -29,7 +29,7 @@ const App = () => {
 
   function Robert(props) {
     //num is made to be a pos random number within array length
-    var num = Math.floor(Math.random() * 3);
+    var num = Math.floor(Math.random() * 9);
     return (
       <>
         <h1> </h1>
